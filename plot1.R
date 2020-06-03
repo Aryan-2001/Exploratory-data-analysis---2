@@ -29,7 +29,7 @@ y_2008 <- tapply(d4$Emissions,d4$SCC,sum)
 x_2008 <- row.names(y_2008)
 
 png("plot1.png")
-plot(x=x_1999,y=y_1999, col = "red" ,pch = 19 ,ylim = c(0,2000))
+plot(x=x_1999,y=y_1999, col = "red" ,pch = 19 ,ylim = c(0,2000) ,xlab = "Sources" ,ylab = "PM 2.5")
 abline(h = mean(y_1999) , lwd = 2 , lty = 2,col="red")
 points(x=x_2002 , y=y_2002 ,col = "blue" ,pch = 19 )
 abline(h = mean(y_2002) , lwd = 2 , lty = 2,col="blue")
